@@ -1,0 +1,40 @@
+/* Spearmint specific rules */
+.spearmint-top-bar {
+  background-image: linear-gradient(to bottom right, var(--spearmint-light), var(--spearmint-dark));
+}
+
+.spearmint-content .title,
+.spearmint-content .tips-title-container p {
+  color: var(--spearmint-dark);
+}
+
+.spearmint-content .plant-pic {
+  content: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Minze.jpg');
+}
+
+.spearmint-content .learn-more-button,
+.spearmint-content .go-back-button {
+  border-color: var(--spearmint-dark);
+}
+
+.spearmint-content .learn-more-button:hover,
+.spearmint-content .go-back-button:hover {
+  background-color: var(--spearmint-transparency);
+}
+
+.spearmint-content .plant-header, .spearmint-content .tip-bullet {
+  filter: invert(30%) sepia(77%) saturate(2467%) hue-rotate(144deg) brightness(93%) contrast(101%);
+}
+
+.spearmint-content span {
+  color: var(--spearmint-dark);
+}
+
+.spearmint-content .tips-title-container {
+  border-color: var(--spearmint-dark);
+  background-color: var(--spearmint-transparency);
+}
+
+.spearmint-content .tip-container {
+  border-color: var(--spearmint-light);
+}

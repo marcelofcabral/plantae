@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Plantae</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./src/css/general.css">
+  <link rel="stylesheet" href="./src/css/layout.css">
+  <link rel="stylesheet" href="./src/css/utility.css">
+  <link rel="stylesheet" href="./src/css/plants/general.css">
+  <link rel="stylesheet" href="./src/css/plants/lavender.css">
+  <link rel="stylesheet" href="./src/css/plants/rose.css">
+  <link rel="stylesheet" href="./src/css/plants/spearmint.css">
+  <meta name="description" content="Information about common plants and tips on taking care of them">
+  <meta name="keywords" content="Plants, plants growing, plants care">
+  <meta author="Marcelo F. Cabral">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="src/scripts/scripts.js"></script>
+</head>
+
+<body>
+  <section id="general-container" class="general-container">
+    <section class=app-title>
+      <img class="plant-header" />
+      <h1>Plantae</h1>
+    </section>
+    <div class="subtitle-container">
+      <h2 id="subtitle" class="hidden">Get to know more about some common house plants</h2>
+      <div style="margin-top: 20px; display: flex; flex-direction: column">
+        <img id="first-chevron" class="chevron hidden" />
+        <img id="second-chevron" class="chevron hidden" style="margin-top: -25px;" />
+      </div>
+    </div>
+    <div class="plants-container">
+      <div class="flip-card hidden" style="--delay: 0">
+        <div id="lavender" class="flip-card-inner">
+          <div id="lavender-front" class="plant-container">
+            <div class="lavender-top-bar">
+
+            </div>
+            <div class="plant-content">
+              <section class="lavender-content">
+                <h3 class="title">
+                  <b>Lavender</b>
+                </h3>
+                <div class="card-content">
+                  <div class="plant-text">
+                    <p>
+                      Lavandula (common name lavender) is a genus of 47 known species of flowering plants in the mint
+                      family,
+                      Lamiaceae.
+                    </p>
+                    <p>
+                      It is native to the Old World and is found in Cape Verde and the Canary Islands, and from Europe
+                      across
+                      to
+                      northern and eastern Africa, the Mediterranean, southwest Asia to India.
+                    </p>
+                  </div>
+                  <div class="plant-pic-container">
+                    <img class="plant-pic" />
+                  </div>
+                  <div class="learn-more-button-container">
+                    <div>
+                      <button class="learn-more-button" onclick="toggleCardRotationClass('lavender', 'front')">
+                        <img class="plant-header" />
+                        <span><b>Learn more</b></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div id="lavender-back" class="plant-container">
+            <div class="lavender-top-bar"></div>
+            <div class="plant-content">
+              <section class="lavender-content">
+                <div class="tips-title-container">
+                  <p>Growing tips</p>
+                  <img class="plant-header">
+                </div>
+                <div class="card-content">
+                  <div class="tips-text">
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p>Lavenders flourish best in dry, well-drained, sandy or gravelly soils in full sun.</p>
+                    </div>
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p>All types need little or no fertilizer and good air circulation.</p>
+                    </div>
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p>In areas of high humidity, root rot due to fungus infection can be a problem.</p>
+                    </div>
+                  </div>
+                  <div class="go-back-button-container">
+                    <button class="go-back-button" onclick=" toggleCardRotationClass('lavender', 'back')">
+                      <span><b>&lt</b></span>
+                    </button>
+                  </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card hidden" style="--delay: 0.5">
+        <div id="rose" class="flip-card-inner">
+          <div id="rose-front" class="plant-container">
+            <div class="rose-top-bar">
+            </div>
+            <div class="plant-content">
+              <section class="rose-content">
+                <h3 class="title">
+                  <b>Rose</b>
+                </h3>
+                <div class="card-content">
+                  <div class="plant-text">
+                    <p>
+                      A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the
+                      flower it bears.
+                    </p>
+                    <p>
+                      There are over three hundred species and tens of thousands of cultivars.
+                      They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are
+                      often
+                      armed
+                      with sharp prickles.
+                    </p>
+                  </div>
+                  <div class="plant-pic-container">
+                    <img class="plant-pic" />
+                  </div>
+                  <div class="learn-more-button-container">
+                    <div>
+                      <button class="learn-more-button" onclick="toggleCardRotationClass('rose', 'front')">
+                        <img class="plant-header" />
+                        <span><b>Learn more</b></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div id="rose-back" class="plant-container">
+            <div class="rose-top-bar"></div>
+            <div class="plant-content">
+              <section class="rose-content">
+                <div class="tips-title-container">
+                  <p>Growing tips</p>
+                  <img class="plant-header">
+                </div>
+                <div class="card-content">
+                  <div class="tips-text">
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p> Roses crave sun, at least six hours a day is ideal.</p>
+                    </div>
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p> Plant roses in rich, well-draining soil. When planting, mix organic matter, such as compost or
+                        ground bark,
+                        into excavated soil you will use to backfill the planting hole.</p>
+                    </div>
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p>Irrigate roses deeply but infrequently, applying water directly to soil using soaker hoses or
+                        drip irrigation.
+                        Water needs vary based on weather and soil, so check soil with your finger.</p>
+                    </div>
+
+                  </div>
+                  <div class="go-back-button-container">
+                    <button class="go-back-button" onclick=" toggleCardRotationClass('rose', 'back')">
+                      <span><b>&lt</b></span>
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="flip-card hidden" style="--delay: 1">
+        <div id=spearmint class="flip-card-inner">
+          <div id="spearmint-front" class="plant-container">
+            <div class="spearmint-top-bar">
+            </div>
+            <div class="plant-content">
+              <section class="spearmint-content">
+                <h3 class="title">
+                  <b>Spearmint</b>
+                </h3>
+                <div class="card-content">
+                  <div class="plant-text">
+                    <p>
+                      Spearmint, also known as garden mint, is a species of mint, Mentha spicata,
+                      native to Europe and southern temperate Asia, extending from Ireland in the west to southern China
+                      in
+                      the
+                      east.
+                    </p>
+                    <p>
+                      It is used as a flavouring in food and herbal teas. The aromatic oil, called oil of spearmint, is
+                      also
+                      used as a flavouring and sometimes as a scent.
+                    </p>
+                  </div>
+                  <div class="plant-pic-container">
+                    <img class="plant-pic" />
+                  </div>
+                  <div class="learn-more-button-container">
+                    <div>
+                      <button class="learn-more-button" onclick="toggleCardRotationClass('spearmint', 'front')">
+                        <img class="plant-header" />
+                        <span><b>Learn more</b></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div id="spearmint-back" class="plant-container">
+            <div class="spearmint-top-bar"></div>
+            <div class="plant-content">
+              <section class="spearmint-content">
+                <div class="tips-title-container">
+                  <p>Growing tips</p>
+                  <img class="plant-header">
+                </div>
+                <div class="card-content">
+                  <div class="tips-text">
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p>Divide plants every two years to keep them healthy.</p>
+                    </div>
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p>If you live in an area with very cold winters, it is best to bring potted spearmint indoors and
+                        place in a sunny window.</p>
+                    </div>
+                    <div class="tip-container">
+                      <div class="tip-bullet-container">
+                        <img class="tip-bullet">
+                      </div>
+                      <p>Although it can grow in many different types of soil, it always needs plenty of water. During
+                        summer,
+                        ensure the soil is moist to the touch at all times.
+                      </p>
+                    </div>
+
+                  </div>
+                  <div class="go-back-button-container">
+                    <button class="go-back-button" onclick=" toggleCardRotationClass('spearmint', 'back')">
+                      <span><b>&lt</b></span>
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

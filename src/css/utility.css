@@ -1,0 +1,91 @@
+/* || Utility classes */
+.flip-card {
+  position: relative;
+  perspective: 800px;
+  transition: all 0.4s;
+  top: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner-rotate {
+  transform: rotateY(180deg);
+}
+
+#lavender-front,
+#lavender-back,
+#rose-front,
+#rose-back,
+#spearmint-front,
+#spearmint-back,
+#succulent-front,
+#succulent-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+#lavender-back,
+#rose-back,
+#spearmint-back,
+#succulent-back {
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.shown {
+  opacity: 1;
+}
+
+#subtitle.hidden {
+  top: -35px;
+}
+
+#subtitle.shown {
+  top: 0;
+}
+
+#first-chevron.shown {
+  animation: chevron-animation 1s ease-in-out 0.07s infinite;
+}
+
+#second-chevron.shown {
+  animation: chevron-animation 1s ease-in-out infinite;
+}
+
+.flip-card.shown {
+  animation: cards-animation 0.2s ease-in-out;
+}
+
+@keyframes cards-animation {
+  0% {
+    top: -35px;
+    left: -35px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@keyframes chevron-animation {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 30px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}

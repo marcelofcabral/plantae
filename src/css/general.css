@@ -1,0 +1,74 @@
+/* || Font import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap");
+
+/* || Variables declaration */
+:root {
+  --plant-width: 32%;
+  --plant-height: 45px;
+
+  --transparent: rgba(255, 255, 255, 0);
+
+  --lavender-light: hsl(267, 29%, 60%);
+  --lavender-dark: hsl(267, 29%, 42%);
+  --lavender-transparency: hsla(267, 29%, 60%, .2);
+
+  --rose-light: hsl(346, 100%, 42%);
+  --rose-dark: hsl(346, 100%, 29%);
+  --rose-transparency: hsla(346, 100%, 42%, .2);
+
+  --spearmint-light: hsl(158, 49%, 47%);
+  --spearmint-dark: hsl(158, 100%, 29%);
+  --spearmint-transparency: hsla(158, 49%, 47%, .2);
+
+  --succulent-light: hsl(120, 61%, 34%);
+  --succulent-dark: hsl(120, 61%, 22%);
+  --succulent-transparency: hsla(120, 61%, 34%, .2);
+}
+
+
+/* || General styling */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 1990px;
+  padding: 2.5rem;
+  background-color: #a3ffaf;
+  background-image: linear-gradient(to top left, #3e5f43, #a3ffaf);
+}
+
+h1 {
+  color: #3e5f43;
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+p,
+li {
+  text-align: justify;
+  margin: 7px 0;
+  font-size: 2.2rem;
+  font-weight: 200;
+}

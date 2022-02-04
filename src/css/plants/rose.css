@@ -1,0 +1,41 @@
+/* Rose specific rules */
+.rose-top-bar {
+  background-image: linear-gradient(to bottom right, var(--rose-light), var(--rose-dark));
+}
+
+.rose-content .title,
+.rose-content .tips-title-container p {
+  color: var(--rose-dark);
+}
+
+.rose-content .plant-pic {
+  content: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Small_Red_Rose.JPG');
+}
+
+.rose-content .learn-more-button,
+.rose-content .go-back-button {
+  border-color: var(--rose-light);
+}
+
+.rose-content .learn-more-button:hover,
+.rose-content .go-back-button:hover  {
+  background-color: var(--rose-transparency);
+}
+
+.rose-content .plant-header,
+.rose-content .tip-bullet {
+  filter: invert(12%) sepia(61%) saturate(7335%) hue-rotate(337deg) brightness(65%) contrast(110%);
+}
+
+.rose-content span {
+  color: var(--rose-dark);
+}
+
+.rose-content .tips-title-container {
+  border-color: var(--rose-dark);
+  background-color: var(--rose-transparency);
+}
+
+.rose-content .tip-container {
+  border-color: var(--rose-light);
+}

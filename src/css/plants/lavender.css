@@ -1,0 +1,41 @@
+/* Lavender specific rules */
+.lavender-top-bar {
+  background-image: linear-gradient(to bottom right, var(--lavender-light), var(--lavender-dark));
+}
+
+.lavender-content .title,
+.lavender-content .tips-title-container p {
+  color: var(--lavender-dark);
+}
+
+.lavender-content .plant-pic {
+  content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Single_lavender_flower02.jpg/1280px-Single_lavender_flower02.jpg');
+}
+
+.lavender-content .learn-more-button,
+.lavender-content .go-back-button {
+  border-color: var(--lavender-light);
+}
+
+.lavender-content .learn-more-button:hover,
+.lavender-content .go-back-button:hover  {
+  background-color: var(--lavender-transparency);
+}
+
+.lavender-content .plant-header,
+.lavender-content .tip-bullet {
+  filter: invert(31%) sepia(35%) saturate(697%) hue-rotate(225deg) brightness(97%) contrast(93%);
+}
+
+.lavender-content span {
+  color: var(--lavender-dark);
+}
+
+.lavender-content .tips-title-container {
+  border-color: var(--lavender-dark);
+  background-color: var(--lavender-transparency);
+}
+
+.lavender-content .tip-container {
+  border-color: var(--lavender-light);
+}

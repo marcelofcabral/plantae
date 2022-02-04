@@ -1,0 +1,72 @@
+/* || Sitewide (basic page layout) */
+.app-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title .plant-header {
+  width: 50px;
+  height: 50px;
+  filter: invert(20%) sepia(13%) saturate(7429%) hue-rotate(90deg) brightness(102%) contrast(83%);
+}
+
+.general-container {
+  height: 100%;
+  border-radius: 2rem;
+  background-color: #a5f7aa;
+  background-image: linear-gradient(to top left, #5a855d, #a5f7aa);
+  padding: 30px 45px;
+}
+
+.subtitle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40rem 0 40rem 0;
+}
+
+#subtitle {
+  position: relative;
+  transition: all 0.8s ease-out;
+}
+
+#first-chevron,
+#second-chevron {
+  position: relative;
+  transition: all 0.6s ease-in;
+}
+
+.chevron {
+  content: url("../../assets/down-arrow.png");
+  width: 65px;
+  height: 50px;
+}
+
+.plants-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 35px;
+}
+
+.plant-container {
+  box-shadow: 7px 7px 30px #002b01;
+  border-radius: 20px;
+  transition: opacity 0.5s;
+}
+
+.plant-content {
+  height: 790px;
+  border-radius: 0 0 20px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.card-content {
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
